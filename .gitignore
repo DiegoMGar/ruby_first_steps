@@ -1,3 +1,7 @@
+# IDE
+.idea/
+
+# GITHUB DEFAULT RUBY GITIGNORE
 *.gem
 *.rbc
 /.config
