@@ -30,6 +30,7 @@ times.times do |i|
   print i
 end
 print "\n"
+
 def sum(num1, num2)
   puts 'Sum is: ' + (num1 + num2).to_s
   num1 + num2
@@ -40,5 +41,22 @@ sum 2, 5
 var1 = 7
 var2 = 3
 puts 'Returned is ' + sum(var1, var2).to_s
+
+def x(it)
+  res = 0
+  (0..it).each { |z| puts "#{z}."; res += z }
+  res
+end
+
+puts x(3)
+
+def y(it)
+  res = 0
+  (0...it).each { |z| puts "#{z}."; res += z }
+  res
+end
+
+puts x(3)
+puts y(3)
 
 puts "\n== end =="
